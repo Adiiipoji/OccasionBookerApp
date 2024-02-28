@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navadriane"
+    app:startDestination="@id/fragmentBirthday">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.g.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentBirthday"
+            app:destination="@id/fragmentBirthday" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentBirthday"
+        android:name="com.example.g.FragmentBirthday"
+        android:label="fragment_birthday"
+        tools:layout="@layout/fragment_birthday" />
+</navigation>
